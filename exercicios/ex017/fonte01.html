@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in (polegada), px pt (ponto), pc
+
+            Medidas Relativas
+            em (relativo a tamanho atual da fonte) 
+            ex (relativo a altura x), 
+            rem 
+            vw (% da largura da view port (tela))
+            vh (altura da view port)
+
+            16px geralmente é igual a 1em
+            %
+            */
+            font-size: 1em;
+            /*
+            1em = 16px
+            */
+        }
+
+        h1 {
+            font-weight: bold;
+
+            /*
+            lighter - mais leve, fina
+            normal - normal
+            bold - escura, grossa
+            bolder - mais escura e grossa
+            Também tem em númericos 100 a 900 (aumentando de 100 em 100 - 400 sendo normal, mas nem todas fontes possuem isso)
+
+            weight - peso
+            width - largura
+            height - altura
+            */
+
+            font-size: 3em;
+            /*
+            1em = 16px
+            */
+
+            font-style: italic;
+            /*
+            nem todas as fontes tem o font-stile
+            (mas todas que tiver podem ser combinadas com font weight e style junto com text-decoration)
+            */
+
+            text-decoration: underline;
+            /*
+            sublinhado, nem todas possuem essa opção
+            */
+        }
+
+        h2 {
+            font: bold 2em 'work sans';
+
+            /* Tem um código que condensa todas essas comandas em uma unica, chamamos de shorthand font
+            
+            - font-style -> font-weight -> sont-size -> font-family */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus saepe consequatur dolorem ipsum! Aperiam, molestias! Aliquid sequi aliquam minima! Dignissimos perferendis consequuntur, iure debitis consectetur assumenda numquam aperiam sequi voluptas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat at quos libero repellendus quod eos deserunt vero tempore? Dolorum, commodi iste voluptatum dolore dignissimos sequi corporis repellendus aliquam dolores delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quae voluptate at molestiae iusto temporibus vel aut quisquam voluptates ratione iure similique esse, perferendis nulla itaque expedita? Deleniti, eum ad.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quam, non fuga neque consectetur facere cumque ullam quisquam voluptatem hic magni, vero enim possimus! Quo, tempora? Quis, fugit doloremque! Possimus?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quaerat doloribus iste laudantium dolorum, neque sint, accusamus animi unde quo velit ad fuga ratione maxime voluptatibus dolores? Impedit, aliquid natus?</p>
+</body>
+</html>
