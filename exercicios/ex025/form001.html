@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- autocomplete="off" desliga auto completar do form
+        
+    method="post/get" não é mais segurpo para segurança é nescessário criptografia de dados
+    
+    get usa-se quando quer que a url seja compartilhável e os dados não são sensíveis, sem senha e numero de cartão e o envio de dados só pode ser até 3.000 bites, mais ou menos 3.000 letras
+
+    post usa-se quando tem dados sensíveis mais senhas e cartão é em https e quandos tem mais de 3.000 bites e o envio de arquivos também precisa ser post
+    -->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="name" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
